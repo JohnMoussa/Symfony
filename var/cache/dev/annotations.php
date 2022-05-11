@@ -96,7 +96,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1652270152,
+1 => 1652279925,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -106,10 +106,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/pins',
-                ],
-                'name' => [
-                    'app_pins',
+                    '/',
                 ],
             ],
         ],

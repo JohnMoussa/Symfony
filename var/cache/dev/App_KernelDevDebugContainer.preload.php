@@ -10,31 +10,31 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-(require __DIR__.'/App_KernelDevDebugContainer.php')->set(\Container243NpaD\App_KernelDevDebugContainer::class, null);
-require __DIR__.'/Container243NpaD/getSession_FactoryService.php';
-require __DIR__.'/Container243NpaD/getServicesResetterService.php';
-require __DIR__.'/Container243NpaD/getSecrets_VaultService.php';
-require __DIR__.'/Container243NpaD/getRouting_LoaderService.php';
-require __DIR__.'/Container243NpaD/getErrorControllerService.php';
-require __DIR__.'/Container243NpaD/getContainer_EnvVarProcessorsLocatorService.php';
-require __DIR__.'/Container243NpaD/getContainer_EnvVarProcessorService.php';
-require __DIR__.'/Container243NpaD/getCache_SystemClearerService.php';
-require __DIR__.'/Container243NpaD/getCache_SystemService.php';
-require __DIR__.'/Container243NpaD/getCache_GlobalClearerService.php';
-require __DIR__.'/Container243NpaD/getCache_AppClearerService.php';
-require __DIR__.'/Container243NpaD/getCache_AppService.php';
-require __DIR__.'/Container243NpaD/getArgumentResolver_ServiceService.php';
-require __DIR__.'/Container243NpaD/getAnnotations_ReaderService.php';
-require __DIR__.'/Container243NpaD/getAnnotations_CachedReaderService.php';
-require __DIR__.'/Container243NpaD/getTemplateControllerService.php';
-require __DIR__.'/Container243NpaD/getRedirectControllerService.php';
-require __DIR__.'/Container243NpaD/getPinsControllerService.php';
-require __DIR__.'/Container243NpaD/get_Session_DeprecatedService.php';
-require __DIR__.'/Container243NpaD/get_ServiceLocator_KfwZsneService.php';
-require __DIR__.'/Container243NpaD/get_ServiceLocator_KfbR3DYService.php';
-require __DIR__.'/Container243NpaD/get_Container_Private_SessionService.php';
-require __DIR__.'/Container243NpaD/get_Container_Private_FilesystemService.php';
-require __DIR__.'/Container243NpaD/get_Container_Private_CacheClearerService.php';
+(require __DIR__.'/App_KernelDevDebugContainer.php')->set(\ContainerUJnteKj\App_KernelDevDebugContainer::class, null);
+require __DIR__.'/ContainerUJnteKj/getSession_FactoryService.php';
+require __DIR__.'/ContainerUJnteKj/getServicesResetterService.php';
+require __DIR__.'/ContainerUJnteKj/getSecrets_VaultService.php';
+require __DIR__.'/ContainerUJnteKj/getRouting_LoaderService.php';
+require __DIR__.'/ContainerUJnteKj/getErrorControllerService.php';
+require __DIR__.'/ContainerUJnteKj/getContainer_EnvVarProcessorsLocatorService.php';
+require __DIR__.'/ContainerUJnteKj/getContainer_EnvVarProcessorService.php';
+require __DIR__.'/ContainerUJnteKj/getCache_SystemClearerService.php';
+require __DIR__.'/ContainerUJnteKj/getCache_SystemService.php';
+require __DIR__.'/ContainerUJnteKj/getCache_GlobalClearerService.php';
+require __DIR__.'/ContainerUJnteKj/getCache_AppClearerService.php';
+require __DIR__.'/ContainerUJnteKj/getCache_AppService.php';
+require __DIR__.'/ContainerUJnteKj/getArgumentResolver_ServiceService.php';
+require __DIR__.'/ContainerUJnteKj/getAnnotations_ReaderService.php';
+require __DIR__.'/ContainerUJnteKj/getAnnotations_CachedReaderService.php';
+require __DIR__.'/ContainerUJnteKj/getTemplateControllerService.php';
+require __DIR__.'/ContainerUJnteKj/getRedirectControllerService.php';
+require __DIR__.'/ContainerUJnteKj/getPinsControllerService.php';
+require __DIR__.'/ContainerUJnteKj/get_Session_DeprecatedService.php';
+require __DIR__.'/ContainerUJnteKj/get_ServiceLocator_KfwZsneService.php';
+require __DIR__.'/ContainerUJnteKj/get_ServiceLocator_KfbR3DYService.php';
+require __DIR__.'/ContainerUJnteKj/get_Container_Private_SessionService.php';
+require __DIR__.'/ContainerUJnteKj/get_Container_Private_FilesystemService.php';
+require __DIR__.'/ContainerUJnteKj/get_Container_Private_CacheClearerService.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -114,3 +114,9 @@ $classes[] = 'Symfony\Component\HttpKernel\EventListener\StreamedResponseListene
 $classes[] = 'Symfony\Component\HttpKernel\EventListener\ValidateRequestListener';
 
 $preloaded = Preloader::preload($classes);
+
+$classes = [];
+$classes[] = 'Symfony\\Component\\Routing\\Generator\\CompiledUrlGenerator';
+$classes[] = 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableCompiledUrlMatcher';
+$classes[] = 'Symfony\\Component\\Routing\\Annotation\\Route';
+$preloaded = Preloader::preload($classes, $preloaded);
