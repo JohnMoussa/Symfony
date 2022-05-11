@@ -13,6 +13,6 @@ class PinsController extends AbstractController
      */
     public function index(): Response
     {
-        return new Response("Hello World");
+        return new Response("This is your boy John");
     }
 }
